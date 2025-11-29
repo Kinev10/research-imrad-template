@@ -144,7 +144,46 @@ https://kinev10.github.io/research-imrad-template/
 
 ---
 
-## ✍️ Editing Your Content
+# 🔄 Updating Your Fork When the Teacher Updates the Template
+
+When you fork this repository, you receive a **copy**.  
+If the teacher updates the original template, your fork does **not** automatically update.
+
+You must manually sync it using one of the methods below.
+
+---
+
+## 🅰️ Option A — GitHub UI (Easiest)
+
+1. Open your fork on GitHub  
+2. Click **Sync fork** or **Fetch upstream**  
+3. Click **Update branch**
+
+Your fork will instantly update with the teacher’s latest changes.
+
+---
+
+## 🅱️ Option B — Git Command Line (Recommended for Developers)
+
+Run these commands inside your forked repository:
+
+### Add the teacher’s repo as an upstream remote (ONE TIME ONLY):
+
+```bash
+git remote add upstream https://github.com/Kinev10/research-imrad-template.git
+```
+
+### Pull updates anytime you want to sync:
+
+```bash
+git pull upstream main
+```
+
+Now your fork is up to date.
+
+---
+
+# ✍️ Editing Your Content
 
 You can edit any page in the `docs/` folder.
 
@@ -168,17 +207,17 @@ docs/src/
 
 ---
 
-## 🔀 Git Workflow (Recommended for Students)
+# 🔀 Git Workflow (Recommended for Students)
 
 1. Create a branch before editing  
 2. Commit changes  
 3. Push the branch  
 4. Open a Pull Request  
-5. After PR is **merged**, GitHub Pages automatically updates  
+5. Once PR is **merged**, GitHub Pages automatically updates  
 
 ---
 
-## 🎉 You’re Ready!
+# 🎉 You’re Ready!
 
 You now have a complete IMRaD research repository with:
 
@@ -186,3 +225,4 @@ You now have a complete IMRaD research repository with:
 ✔ Organized Markdown pages  
 ✔ Auto-built MkDocs site  
 ✔ Auto-deployment to GitHub Pages  
+✔ Easy fork syncing for students
