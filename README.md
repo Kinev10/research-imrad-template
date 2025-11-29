@@ -16,7 +16,48 @@ This template follows the **IMRaD structure**:
 
 ---
 
-## 📁 Repository Structure
+# 📦 How to Use This Repository as a Template
+
+This repository has been configured as a **Template Repository** on GitHub.
+
+If you are a student starting your research project, **DO NOT fork this repo**.  
+Instead, follow these steps:
+
+### ✅ 1. Click the **“Use this template”** button at the top of the repository
+
+This creates a **new repository under your GitHub account** with the same files and structure.
+
+### ✅ 2. Name your repository
+
+Examples:
+
+- `imrad-juan-dela-cruz`
+- `research-maricon-santos`
+- `group5-ai-research`
+
+Choose **Public** or **Private** depending on instructor requirements.
+
+### ✅ 3. Clone your newly created repository
+
+```bash
+git clone https://github.com/<your-username>/<your-repo>.git
+```
+
+### ✅ 4. Start editing the Markdown files inside the `docs/` directory
+
+After writing:
+
+```bash
+git add .
+git commit -m "Add introduction section"
+git push
+```
+
+---
+
+# 📁 Repository Structure
+
+Your research content lives inside the `docs/` directory:
 
 ```
 docs/
@@ -56,11 +97,16 @@ docs/
 └── src/
 ```
 
-All research pages are written in **Markdown (.md)** files and organized by section.
+This layout ensures:
+
+✔ Organized academic structure  
+✔ Clean separation of each major section  
+✔ Good maintainability  
+✔ Compatibility with MkDocs navigation  
 
 ---
 
-## 🧩 Requirements
+# 🧩 Requirements
 
 Install MkDocs and the Material theme:
 
@@ -70,15 +116,13 @@ pip install mkdocs mkdocs-material
 
 ---
 
-## ▶️ Local Preview
-
-To preview your research website locally:
+# ▶️ Local Preview
 
 ```bash
 mkdocs serve
 ```
 
-Then open:
+Open:
 
 ```
 http://127.0.0.1:8000/
@@ -142,34 +186,17 @@ https://kinev10.github.io/research-imrad-template/
 
 ---
 
-# 🔄 Updating Your Fork When the Teacher Updates the Template
+# 🔄 Updating Your Repository When the Template Is Updated
 
-When you fork this repository, you receive a **copy**.  
-If the teacher updates the original template, your fork does **not** automatically update.
+Repos created from templates **do not auto-sync**, but you can pull updates:
 
-You must manually sync it using one of the methods below.
-
----
-
-## 🅰️ Option A — GitHub UI (Easiest)
-
-1. Open your fork on GitHub  
-2. Click **Sync fork** or **Fetch upstream**  
-3. Click **Update branch**
-
----
-
-## 🅱️ Option B — Git Command Line (Recommended for Developers)
-
-Run these commands inside your forked repository:
-
-### Add the teacher’s repo as an upstream remote (ONE TIME ONLY):
+### Add upstream (ONE TIME ONLY)
 
 ```bash
 git remote add upstream https://github.com/Kinev10/research-imrad-template.git
 ```
 
-### Pull updates anytime you want to sync:
+### Sync anytime
 
 ```bash
 git pull upstream main
@@ -179,11 +206,11 @@ git pull upstream main
 
 # 🤝 Contribution Guidelines (For Students)
 
-This repository follows a structured contribution workflow.
+Follow this workflow for clean research writing:
 
 ---
 
-## 📌 1. Create a Feature Branch Before Working
+## 1️⃣ Create a Feature Branch
 
 ```bash
 git checkout -b feature/<your-topic>
@@ -191,31 +218,28 @@ git checkout -b feature/<your-topic>
 
 Examples:
 
-- `feature/add-introduction`
-- `feature/update-methods`
-- `fix/typo-in-results`
+- `feature/update-background`
+- `feature/add-methods-subsection`
+- `fix/grammar-in-results`
 
 ---
 
-## 📌 2. Follow Clear Commit Messages
-
-Use conventional commit styles:
+## 2️⃣ Write Clear Commit Messages
 
 ```
-feat: add background of the study
-fix: correct grammar in discussion section
-docs: update abstract content
-refactor: rewrite methods subsection
+feat: add data-collection subsection
+fix: correct formatting in abstract
+docs: update introduction overview
 ```
 
 ---
 
-## 📌 3. Keep PRs Small & Focused  
-Avoid mixing many unrelated edits.
+## 3️⃣ Keep PRs Small  
+Don’t mix unrelated edits.
 
 ---
 
-## 📌 4. Open a Pull Request (PR)
+## 4️⃣ Open a Pull Request
 
 1. Push your branch  
 2. Click **Compare & Pull Request**  
@@ -224,21 +248,11 @@ Avoid mixing many unrelated edits.
 
 ---
 
-## 📌 5. Update Your Fork Before Starting New Work
+## 5️⃣ Sync Before Working Again
 
 ```bash
 git pull upstream main
 ```
-
-This prevents merge conflicts.
-
----
-
-## 📌 6. After Your PR Is Merged
-
-- Your changes enter the main project  
-- GitHub Pages **auto-updates**  
-- You may safely delete your branch  
 
 ---
 
@@ -246,30 +260,52 @@ This prevents merge conflicts.
 
 ```mermaid
 flowchart TD
-    A[Fork the Template Repository] --> B[Clone Your Fork]
-    B --> C[Create a Feature Branch]
-    C --> D[Edit Markdown Files in docs/]
+    A[Fork or Use Template] --> B[Clone Repository]
+    B --> C[Create Feature Branch]
+    C --> D[Edit IMRaD Pages in docs/]
     D --> E[Commit and Push Changes]
     E --> F[Open Pull Request to Main Repo]
     F --> G{Teacher Reviews PR}
     G -->|Approved| H[PR is Merged]
     H --> I[GitHub Actions Builds MkDocs Site]
     I --> J[GitHub Pages Updates Automatically]
-    H --> K[Student Syncs Fork with Upstream]
+    H --> K[Student Syncs with Upstream if Needed]
     K --> C
 ```
 
 ---
 
-# 🎉 You’re Ready!
+# ✍️ Editing Your Research Paper
 
-You now have a complete IMRaD research repository with:
+Modify content in:
 
-✔ GitHub version control  
-✔ Organized Markdown pages  
-✔ Auto-built MkDocs site  
-✔ Auto-deployment to GitHub Pages  
-✔ Contribution workflow for students  
-✔ Fork syncing instructions  
+```
+docs/
+```
+
+Images:
+
+```
+docs/img/
+```
+
+Source code, scripts, datasets:
+
+```
+docs/src/
+```
+
+---
+
+# 🎉 You're Ready!
+
+You now have a complete **IMRaD Research Template** with:
+
+✔ Organized academic structure  
+✔ Markdown-based writing  
+✔ Auto-validation & auto-deployment  
+✔ Template-based student workflow  
+✔ Optional upstream sync  
+✔ Beautiful GitHub Pages output  
 ✔ Visual workflow diagram  
 
