@@ -86,15 +86,13 @@ http://127.0.0.1:8000/
 
 ---
 
-## 🌐 How to Enable GitHub Pages (Publishing Your Site)
+# 🌐 How to Enable GitHub Pages (Publishing Your Site)
 
 This project is designed to be published online using **GitHub Pages** and **MkDocs**.
 
-Follow these steps to enable the website version of your research.
-
 ---
 
-### ✅ 1. Push your repository to GitHub
+## ✅ 1. Push your repository to GitHub
 
 If you haven’t yet:
 
@@ -106,7 +104,7 @@ git push
 
 ---
 
-### ✅ 2. Automatic Deployment (Recommended)
+## ✅ 2. Automatic Deployment (Recommended)
 
 This template includes a **GitHub Actions workflow** that automatically deploys your MkDocs site **whenever a Pull Request is merged into the `main` branch**.
 
@@ -118,11 +116,11 @@ The workflow will:
 
 ---
 
-### ✅ 3. One-Time Setup on GitHub Pages
+## ✅ 3. One-Time Setup on GitHub Pages
 
 After the first deployment:
 
-1. Go to your repository’s **Settings**
+1. Go to **Settings**
 2. Click **Pages**
 3. Under *Build and Deployment*:
    - **Source:** Deploy from a branch  
@@ -159,8 +157,6 @@ You must manually sync it using one of the methods below.
 2. Click **Sync fork** or **Fetch upstream**  
 3. Click **Update branch**
 
-Your fork will instantly update with the teacher’s latest changes.
-
 ---
 
 ## 🅱️ Option B — Git Command Line (Recommended for Developers)
@@ -179,41 +175,89 @@ git remote add upstream https://github.com/Kinev10/research-imrad-template.git
 git pull upstream main
 ```
 
-Now your fork is up to date.
+---
+
+# 🤝 Contribution Guidelines (For Students)
+
+This repository follows a structured contribution workflow.
 
 ---
 
-# ✍️ Editing Your Content
+## 📌 1. Create a Feature Branch Before Working
 
-You can edit any page in the `docs/` folder.
+```bash
+git checkout -b feature/<your-topic>
+```
 
 Examples:
 
-- `docs/introduction/background.md`
-- `docs/methods/data-collection.md`
-- `docs/results/findings.md`
+- `feature/add-introduction`
+- `feature/update-methods`
+- `fix/typo-in-results`
 
-Images go inside:
+---
 
-```
-docs/img/
-```
+## 📌 2. Follow Clear Commit Messages
 
-Source code or scripts go inside:
+Use conventional commit styles:
 
 ```
-docs/src/
+feat: add background of the study
+fix: correct grammar in discussion section
+docs: update abstract content
+refactor: rewrite methods subsection
 ```
 
 ---
 
-# 🔀 Git Workflow (Recommended for Students)
+## 📌 3. Keep PRs Small & Focused  
+Avoid mixing many unrelated edits.
 
-1. Create a branch before editing  
-2. Commit changes  
-3. Push the branch  
-4. Open a Pull Request  
-5. Once PR is **merged**, GitHub Pages automatically updates  
+---
+
+## 📌 4. Open a Pull Request (PR)
+
+1. Push your branch  
+2. Click **Compare & Pull Request**  
+3. Write a clear description  
+4. Submit  
+
+---
+
+## 📌 5. Update Your Fork Before Starting New Work
+
+```bash
+git pull upstream main
+```
+
+This prevents merge conflicts.
+
+---
+
+## 📌 6. After Your PR Is Merged
+
+- Your changes enter the main project  
+- GitHub Pages **auto-updates**  
+- You may safely delete your branch  
+
+---
+
+# 🔄 Student Workflow Diagram
+
+```mermaid
+flowchart TD
+    A[Fork the Template Repository] --> B[Clone Your Fork]
+    B --> C[Create a Feature Branch]
+    C --> D[Edit Markdown Files in docs/]
+    D --> E[Commit and Push Changes]
+    E --> F[Open Pull Request to Main Repo]
+    F --> G{Teacher Reviews PR}
+    G -->|Approved| H[PR is Merged]
+    H --> I[GitHub Actions Builds MkDocs Site]
+    I --> J[GitHub Pages Updates Automatically]
+    H --> K[Student Syncs Fork with Upstream]
+    K --> C
+```
 
 ---
 
@@ -225,4 +269,7 @@ You now have a complete IMRaD research repository with:
 ✔ Organized Markdown pages  
 ✔ Auto-built MkDocs site  
 ✔ Auto-deployment to GitHub Pages  
-✔ Easy fork syncing for students
+✔ Contribution workflow for students  
+✔ Fork syncing instructions  
+✔ Visual workflow diagram  
+
