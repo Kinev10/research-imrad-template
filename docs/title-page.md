@@ -1,9 +1,9 @@
 # Title Page
 
-_Project Title_
+Student Engagement and Retention Factors among CCS Students of Mabini Colleges: Basis for Program Enhancement
 
-Author(s):
+Author(s): Frank Kiven B. Ablao
 
-Institution:
+Institution: Mabini Colleges, Inc.
 
 Date:
