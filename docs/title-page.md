@@ -6,4 +6,4 @@ Author(s):
 
 Institution:
 
-Date: December 5, 2025
+Date:
